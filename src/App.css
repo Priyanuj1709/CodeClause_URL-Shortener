@@ -1,5 +1,27 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Agdasima&display=swap');
+
+
 .App {
   text-align: center;
+  flex-wrap: wrap;
+  border-color: red;
+  border-style: solid;
+  border-width: 3%;
+  border-radius: 5px;
+  background-color: black;
+  margin-left: 25%;
+  margin-right: 25%;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  padding: 12%;
+  align-items: center;
+  justify-content: center;
+  transition: 0.5s ease-in-out;
+  justify-content: space-between;
+  box-shadow: 0 0 10px 10px rgba(0, 0, 0, 0.5);
+
+
 }
 
 .App-logo {
@@ -22,6 +44,7 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+
 }
 
 .App-link {
@@ -35,4 +58,136 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.title{
+  font-family: 'Agdasima', sans-serif;
+  font-size: 3rem;
+  color: white;
+  margin-bottom: 0;
+  margin-top: 20%;
+}
+
+.input{
+  font-family: 'Agdasima', sans-serif;
+  font-size: 1.5rem;
+  color: black;
+  font-style: italic;
+  background-color: cadetblue;
+  margin-bottom: 0;
+  border: none;
+  border-radius: 5px;
+  padding: 5px;
+  margin: 5px;
+  align-items: center;
+  justify-content: center;
+}
+
+.input:hover{
+  background-color: #61dafb;
+  color: black;
+}
+
+.btn{
+  font-family: 'Agdasima', sans-serif;
+  font-size: 1.5rem;
+  color: red;
+  font-style: italic;
+  background-color: white;
+  margin-bottom: 0;
+  border: none;
+  border-radius: 5px;
+  padding: 5px;
+  margin: 5px;
+  align-items: center;
+  justify-content: center;
+  transition: 0.5s ease-in-out;
+  justify-content: space-between;
+
+}
+
+.btn:hover{
+  background-color: red;
+  color: white;
+  transition: 0.5s ease-in-out;
+  cursor: pointer;
+}
+
+.loader{
+  color: white;
+  font-size: 2rem;
+  margin-top: 3%;
+
+}
+
+.result{
+  font-family: 'Agdasima', sans-serif;
+  font-size: 1.5rem;
+  color: white;
+}
+
+
+
+.result:hover{
+ 
+  color: red;
+  cursor: text;
+}
+
+@media screen {
+  
+ 
+  .title{
+    font-family: 'Agdasima', sans-serif;
+    font-size: 3rem;
+    color: white;
+    margin-bottom: 0;
+    margin-top: 20%;
+  }
+  .input{
+    font-family: 'Agdasima', sans-serif;
+    font-size: 1.5rem;
+    color: black;
+    font-style: italic;
+    background-color: cadetblue;
+    margin-bottom: 0;
+    border: none;
+    border-radius: 5px;
+    padding: 5px;
+    margin: 5px;
+    align-items: center;
+    justify-content: center;
+  }
+  .input:hover{
+    background-color: #61dafb;
+    color: black;
+  }
+  .btn{
+    font-family: 'Agdasima', sans-serif;
+    font-size: 1.5rem;
+    color: red;
+    font-style: italic;
+    background-color: white;
+    margin-bottom: 0;
+    border: none;
+    border-radius: 5px;
+    padding: 5px;
+    margin: 5px;
+    align-items: center;
+    justify-content: center;
+    transition: 0.5s ease-in-out;
+    justify-content: space-between;
+  }
+  .btn:hover{
+    background-color: red;
+    color: white;
+    transition: 0.5s ease-in-out;
+    cursor: pointer;
+  }
+  .loader{
+    color: white;
+    font-size: 2rem
+  
+}
+
 }

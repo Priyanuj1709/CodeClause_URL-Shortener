@@ -1,23 +1,46 @@
-import logo from './logo.svg';
+import React, {useState} from 'react';
 import './App.css';
+import axios from 'axios';
+
+
 
 function App() {
+
+  const[shortUrl, setShortUrl] = useState('');
+  const[result, setResult] = useState('');
+  const [loader, setLoader] = useState(false);
+  
+  
+    const fetchData = async () => {
+    try{
+      setLoader(true);
+      const response = await axios.post('https://api.shrtco.de/v2/shorten?url=' + shortUrl);
+      setLoader(false);
+      setResult(response.data.result.full_short_link);
+    }catch(error){
+      alert(error);
+    }
+  }
+
+  const handleClick = () => {
+    fetchData();
+    setShortUrl("");
+  }
+
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h1 className='title'>URL SHORTNER</h1>
+      <input 
+      className='input'
+      type="text" 
+      placeholder="Enter URL" 
+      value={shortUrl}
+      onChange={(e) => setShortUrl(e.target.value)}
+      />
+      <button className="btn" onClick={handleClick}>SHORTEN</button>
+     {loader === true ? <h3 className='loader'>Loading...</h3> : <h3 className='result'>{result}</h3>}
+    
     </div>
   );
 }
