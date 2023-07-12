@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/CodeClause_URL-Shortener/static/css/main.f2c3101e.css",
+    "main.js": "/CodeClause_URL-Shortener/static/js/main.8f9e7829.js",
+    "static/js/787.e618dcbd.chunk.js": "/CodeClause_URL-Shortener/static/js/787.e618dcbd.chunk.js",
+    "index.html": "/CodeClause_URL-Shortener/index.html",
+    "main.f2c3101e.css.map": "/CodeClause_URL-Shortener/static/css/main.f2c3101e.css.map",
+    "main.8f9e7829.js.map": "/CodeClause_URL-Shortener/static/js/main.8f9e7829.js.map",
+    "787.e618dcbd.chunk.js.map": "/CodeClause_URL-Shortener/static/js/787.e618dcbd.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f2c3101e.css",
+    "static/js/main.8f9e7829.js"
+  ]
+}
