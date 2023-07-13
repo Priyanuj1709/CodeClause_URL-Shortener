@@ -29,8 +29,10 @@ function App() {
 
 
   return (
+    <div className='container'>
     <div className="App">
       <h1 className='title'>URL SHORTNER</h1>
+      <div className='btn-grp'>
       <input 
       className='input'
       type="text" 
@@ -39,8 +41,10 @@ function App() {
       onChange={(e) => setShortUrl(e.target.value)}
       />
       <button className="btn" onClick={handleClick}>SHORTEN</button>
+      </div>
      {loader === true ? <h3 className='loader'>Loading...</h3> : <h3 className='result'>{result}</h3>}
     
+    </div>
     </div>
   );
 }

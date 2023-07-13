@@ -1,71 +1,45 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Agdasima&display=swap');
 
+.container{
+  height: 100vh;
+  width: 100%;
+  background-color: gray;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  
+}
+
 
 .App {
   text-align: center;
-  flex-wrap: wrap;
+  width: 50vw;
+  height: 60vh;
   border-color: red;
   border-style: solid;
   border-width: 3%;
   border-radius: 5px;
   background-color: black;
-  margin-left: 25%;
-  margin-right: 25%;
-  margin-top: 5%;
-  margin-bottom: 5%;
-  padding: 12%;
-  align-items: center;
+  display: flex;
   justify-content: center;
+  text-align: center;
+  flex-direction: column;
+  padding: 2rem;
   transition: 0.5s ease-in-out;
-  justify-content: space-between;
   box-shadow: 0 0 10px 10px rgba(0, 0, 0, 0.5);
 
 
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
 
 .title{
   font-family: 'Agdasima', sans-serif;
   font-size: 3rem;
   color: white;
-  margin-bottom: 0;
-  margin-top: 20%;
+  
 }
 
 .input{
@@ -74,13 +48,10 @@
   color: black;
   font-style: italic;
   background-color: cadetblue;
-  margin-bottom: 0;
+
   border: none;
   border-radius: 5px;
-  padding: 5px;
-  margin: 5px;
-  align-items: center;
-  justify-content: center;
+  
 }
 
 .input:hover{
@@ -94,15 +65,10 @@
   color: red;
   font-style: italic;
   background-color: white;
-  margin-bottom: 0;
   border: none;
   border-radius: 5px;
-  padding: 5px;
-  margin: 5px;
-  align-items: center;
-  justify-content: center;
   transition: 0.5s ease-in-out;
-  justify-content: space-between;
+
 
 }
 
@@ -113,10 +79,16 @@
   cursor: pointer;
 }
 
+.btn-grp{
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  justify-content: center;
+}
 .loader{
   color: white;
   font-size: 2rem;
-  margin-top: 3%;
+  
 
 }
 
@@ -134,60 +106,8 @@
   cursor: text;
 }
 
-@media screen {
-  
- 
-  .title{
-    font-family: 'Agdasima', sans-serif;
-    font-size: 3rem;
-    color: white;
-    margin-bottom: 0;
-    margin-top: 20%;
+@media only screen and (max-width: 600px){
+  .App{
+    width: 90%;
   }
-  .input{
-    font-family: 'Agdasima', sans-serif;
-    font-size: 1.5rem;
-    color: black;
-    font-style: italic;
-    background-color: cadetblue;
-    margin-bottom: 0;
-    border: none;
-    border-radius: 5px;
-    padding: 5px;
-    margin: 5px;
-    align-items: center;
-    justify-content: center;
-  }
-  .input:hover{
-    background-color: #61dafb;
-    color: black;
-  }
-  .btn{
-    font-family: 'Agdasima', sans-serif;
-    font-size: 1.5rem;
-    color: red;
-    font-style: italic;
-    background-color: white;
-    margin-bottom: 0;
-    border: none;
-    border-radius: 5px;
-    padding: 5px;
-    margin: 5px;
-    align-items: center;
-    justify-content: center;
-    transition: 0.5s ease-in-out;
-    justify-content: space-between;
-  }
-  .btn:hover{
-    background-color: red;
-    color: white;
-    transition: 0.5s ease-in-out;
-    cursor: pointer;
-  }
-  .loader{
-    color: white;
-    font-size: 2rem
-  
-}
-
 }
